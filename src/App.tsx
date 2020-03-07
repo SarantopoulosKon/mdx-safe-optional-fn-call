@@ -17,10 +17,8 @@ export interface ExampleComponentProps {
 export function ExampleComponent(
   props: ExampleComponentProps
 ): React.ReactElement {
-  const { onChange, name } = props;
-
-  console.log(name?.test);
-  onChange?.(event);
+  console.log(props.name?.test);
+  props.onChange?.(event);
 
   return <div>afdsa</div>;
 }
